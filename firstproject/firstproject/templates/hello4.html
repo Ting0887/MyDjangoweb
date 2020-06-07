@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>第2個Django網頁</title>
+
+{% load static %}
+
+<link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="home">
+	<img src="{% static "images/girl.jpg" %}" alt="welcome"
+	  width="32" height="32"/>
+	<span class="info"> welcome: {{username}}</span>
+	 <h3>生日:1997/5/18</h3>
+	 <h3>畢業學校:輔仁大學</h3>
+	 <h3>興趣:喜歡玩遊戲</h3>
+	<h4> time: {{now}}</h4>
+	</div>
+</body>
+</html>
